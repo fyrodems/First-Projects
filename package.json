@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/fyrodems/First-Projects/issues"
   },
-  "homepage": "https://github.com/fyrodems/First-Projects#readme"
+  "homepage": "https://github.com/fyrodems/First-Projects#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
 }
