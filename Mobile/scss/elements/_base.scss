@@ -1,15 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: 'Open Sans', sans-serif;
-  background-color: #E4E4E4;
-  color: #444444;
+  font-family: $font-primary;
+  color: $color-black;
+}
+
+.container {
+  max-width: 792px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+  @include tablet {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  @include notebook {
+    max-width: 1352px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+.logo {
+  font-family: $font-secondary;
+  font-weight: 300;
+  color: $color-primary;
 }
 
 a {
   text-decoration: none;
 }
 
-.container {
-  max-width: 1000px;
-  width: 100%;
-  margin: 0 auto;
+.btn {
+  color: $color-white;
+  display: inline-block;
+  font-weight: 700;
+  border: none;
 }
+
+

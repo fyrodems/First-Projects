@@ -1,0 +1,42 @@
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.banner__title {
+  padding-top: 130px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-family: $font-secondary;
+  font-size: 3.0625rem;
+}
+
+.banner__text {
+  text-align: center;
+}
+
+.btn--primary {
+  width: 100vw;
+  padding: 22px;
+  background-color: $color-primary;
+  color: $color-white;
+  border-radius: 40px;
+  box-shadow: 3px 10px 14px $color-primary-shadow;
+  margin-top: 38px;
+  text-align: center;
+  @include tablet {
+    width: auto;
+    padding: 22px 157px;
+  }
+}
+
+.banner__img {
+  width: 200%;
+  background-position: -253.5px;
+  @include tablet {
+    width: 100%;
+  }
+}
