@@ -1,0 +1,88 @@
+div.logo-container {
+  margin-top: 30px;
+  text-align: center;
+  @media (min-width: 980px) {
+    display: flex;
+    margin: 66px 20px 44px;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.logo__box {
+  @media (min-width: 980px) {
+    display: flex;
+  }
+}
+
+span.logo {
+  background-color: #FC4887;
+  border-radius: 3px;
+  padding: 5px 15px;
+  color: white;
+  font-size: 2em;
+  font-family: 'Oleo Script', cursive;
+  @media (min-width: 980px) {
+    margin-right: 17px;
+
+  }
+}
+
+span.logo-text {
+  display: block;
+  font-weight: 800;
+  color: rgb(105, 105, 105);
+  margin-top: 10px;
+  font-size: 0.7em;
+  @media (min-width: 980px) {
+    margin-top: 20px;
+  }
+}
+
+//.nav {
+//  display: none;
+//}
+//
+//input[type="checkbox"]:checked + nav {
+//  display: block;
+//}
+.nav {
+  @media (min-width: 980px) {
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav__list {
+    list-style: none;
+    @media (min-width: 980px) {
+      display: flex;
+    }
+  }
+  li {
+    @media (min-width: 980px) {
+      padding-left: 1.5em;
+    }
+  }
+  .nav__element {
+    text-decoration: none;
+    @media (min-width: 980px) {
+      color: #696969;
+      font-size: 0.825em;
+      padding: 0.5em 1em;
+      font-weight: 900;
+      &:hover {
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 2px #ccc;
+      }
+    }
+  }
+}
+
+input[type="checkbox"] {
+  @media (min-width: 980px) {
+    display: none;
+  }
+}
+
+
+
