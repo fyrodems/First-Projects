@@ -3,34 +3,33 @@
 }
 
 .header__container {
-  height: 100%;
   display: flex;
   justify-content: space-between;
+  height: 80px;
   align-items: center;
-  padding: 16px 0;
+  padding: 8px 0;
 }
 
 .header__logo {
   font-size: 2rem;
 }
 
-.nav__list {
-//display: none;
+
+.list__element {
+  display: block;
+    font-weight: 700;
+    color: $color-grey;
+    text-transform: uppercase;
+    letter-spacing: 0.1875rem;
+    padding: 28px 18px 16px;
   @include tablet {
-    display: flex;
-    gap: 3rem;
+    padding-bottom: 32px;
+
   }
 }
 
-.list__element {
-  font-weight: 700;
-  color: $color-grey;
-  padding: 28px 18px 22px;
-  text-transform: uppercase;
-  letter-spacing: 0.1875rem;
-}
-
 .list__element:hover {
-  border-bottom: 4px solid $color-primary;
   color: $color-black;
+  border-bottom: 4px solid $color-primary;
+
 }
