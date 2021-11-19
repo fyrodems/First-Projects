@@ -26,12 +26,15 @@ function watcher(done) {
 
     gulp.watch(entryPath + "/scss/**/*.scss", gulp.series(compileSass, reload));
     gulp.watch(entryPath + "/*.html", gulp.series(reload));
+    gulp.watch(entryPath + "/js/*.js", gulp.series(reload));
+
 
     done();
 }
 
 function reload(done) {
     browserSync.reload();
+
     done();
 }
 
